@@ -13,6 +13,9 @@
 .lgray_color{
   color: lightgray;
 }
+.gray_color{
+  color: gray;
+}
 .white_color{
   color: #fff;
 }
@@ -79,11 +82,13 @@ button:focus{
 }
 .dropdown_menu{
   position: absolute;
-  border : 1px solid black;
+  box-shadow: 2px 3px 2px 2px #888888;
+  border-radius: 5px;
   display: none;
+  margin-top: 20px;
 }
 ul.dropdown_ul li{
-  margin-top: 15px;
+  margin: 15px 0 15px 5px;;
 }
 .main_menu_relative li{
   position: relative;
