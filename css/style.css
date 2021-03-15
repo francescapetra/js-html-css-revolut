@@ -87,6 +87,9 @@ button:focus{
   display: none;
   margin-top: 20px;
 }
+.display_bock{
+  display: block;
+}
 ul.dropdown_ul li{
   margin: 15px 0 15px 5px;;
 }

@@ -1,19 +1,13 @@
 var menuLink = $(".rigth_nav li ");
 
-menuLink.click(
+menuLink.mouseenter(
   function(){
     $(this).parent().find(".dropdown_menu").hide();
-    $(this).children(".dropdown_menu").slideToggle();
+    $(this).children(".dropdown_menu").show();
   }
 );
-
-// menuLink.mouseenter(
-//   function(){
-//     $(this).children(".dropdown_menu").show();
-//   }
-// );
-// menuLink.mouseleave(
-//   function(){
-//     $(this).children(".dropdown_menu").hide();
-//   }
-// );
+menuLink.click(
+  function(){
+    $(this).children(".dropdown_menu").toggle();
+  }
+);
