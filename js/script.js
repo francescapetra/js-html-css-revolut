@@ -5,3 +5,14 @@ menuLink.click(
     $(this).children(".dropdown_menu").slideToggle();
   }
 );
+
+menuLink.mouseenter(
+  function(){
+    $(this).children(".dropdown_menu").show();
+  }
+);
+menuLink.mouseleave(
+  function(){
+    $(this).children(".dropdown_menu").hide();
+  }
+);
