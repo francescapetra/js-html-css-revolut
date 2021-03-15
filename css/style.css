@@ -23,7 +23,6 @@
   font-weight: 500;
 }
 .container{
-  background-color: lightgreen;
   display: flex;
   margin: auto;
   width: 80%;
@@ -38,13 +37,6 @@ header{
   background-color: #fff;
   width: 100%;
 }
-button{
-  margin-left: 20px;
-  padding: 12px 17px;
-  border: none;
-  border-radius: 10px;
-  font-size: 16px;
-}
 nav{
   width: 50%;
   display: flex;
@@ -54,16 +46,42 @@ img{
   display: inline-block;
   vertical-align: text-bottom;
 }
-.left_nav{
+.left_nav ul li a {
 padding-bottom: 5px;
+justify-content: flex-start;
+list-style: none;
 }
-.rigth_nav{
+.rigth_nav {
   justify-content: flex-end;
 }
-ul li{
+nav ul.main_menu li{
   display: inline-block;
   margin-right: 40px;
 }
+ul.main_menu li a:focus{
+  color: black;
+}
 a{
   text-decoration: none;
+}
+button{
+  margin-left: 20px;
+  padding: 12px 17px;
+  border: none;
+  border-radius: 10px;
+  font-size: 16px;
+}
+button:focus{
+  outline: none;
+}
+.dropdown_menu{
+  position: absolute;
+  border : 1px solid black;
+  display: none;
+}
+ul.dropdown_ul li{
+  margin-top: 15px;
+}
+.main_menu_relative li{
+  position: relative;
 }
